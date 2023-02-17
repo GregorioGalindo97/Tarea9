@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea_9</title>
+</head>
+
+<body>
+    <h1 id="titulo">Tarea 9: Cambiar texto</h1>
+    <h2>Lista con JavaScript</h2>
+
+    <section id="lista"></section>
+
+    <button id="mostrar" onclick="mostrar_item()">Mostrar</button>
+    <button id="ocultar" onclick="ocultar_item()">Ocultar</button>
+
+
+<div id="Tablas">
+    <p id="tabla" ></p>
+    <p id="tabla1" ></p>
+    <p id="tabla2" ></p>
+</div>
+
+    <script>
+    function mostrar_item() {
+    var x = document.getElementById("Tablas");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+}
+function ocultar_item() {
+    var x = document.getElementById("Tablas");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+        let nuevo=document.getElementById('titulo');
+        nuevo.style.color="#17abc5";
+        nuevo.style.textAlign="center";
+        nuevo.style.padding="20px";
+
+        let dom1=document.createElement('li');
+        dom1.innerHTML='Primero</l1>';
+        let dom2=document.createElement('li');
+        dom2.innerHTML='Segundo</l1>';
+        let dom3=document.createElement('li');
+        dom3.innerHTML='Tercero</l1>';
+        let dom4=document.createElement('li');
+        dom4.innerHTML='Cuarto</l1>';
+        let dom1_1=document.getElementById('lista');
+        dom1_1.appendChild(dom1);
+        dom1_1.appendChild(dom2);
+        dom1_1.appendChild(dom3);
+        dom1_1.appendChild(dom4);
+
+       
+        localStorage.setItem('','NIKE');
+        var marca=localStorage.getItem('');
+
+        localStorage.removeItem('NIKE');
+        localStorage.clear();
+
+        localStorage.setItem('','8');
+        var stock=localStorage.getItem('');
+
+        localStorage.removeItem('8');
+        localStorage.clear();
+
+        localStorage.setItem('','150.30');
+        var precio=localStorage.getItem('');
+
+        localStorage.removeItem('150.30');
+        localStorage.clear();
+
+        let texto=document.getElementById('tabla');
+        texto.innerHTML="Marca: "+marca+"</br>"+"stock: "+stock+"</br>"+"precio: $"+precio;
+        texto.style.inlineSize="200px";
+        texto.style.border="2px solid red";
+        texto.style.borderBottom="0px";
+        texto.style.marginBottom="0px";
+
+        localStorage.setItem('','PUMA');
+        var marca1=localStorage.getItem('');
+
+        localStorage.removeItem('PUMA');
+        localStorage.clear();
+
+        localStorage.setItem('','7');
+        var stock1=localStorage.getItem('');
+
+        localStorage.removeItem('7');
+        localStorage.clear();
+
+        localStorage.setItem('','80.50');
+        var precio1=localStorage.getItem('');
+
+        localStorage.removeItem('80.50');
+        localStorage.clear();
+
+        let texto1=document.getElementById('tabla1');
+        texto1.innerHTML="Marca: "+marca1+"</br>"+"stock: "+stock1+"</br>"+"precio: $"+precio1;
+        texto1.style.inlineSize="200px"
+        texto1.style.marginTop="0px"
+        texto1.style.border="2px solid red"
+        texto1.style.borderBottom="0px"
+        texto1.style.marginBottom="0px"
+        
+
+        localStorage.setItem('','ADIDAS');
+        var marca2=localStorage.getItem('');
+
+        localStorage.removeItem('ADIDAS');
+        localStorage.clear();
+
+        localStorage.setItem('','6');
+        var stock2=localStorage.getItem('');
+
+        localStorage.removeItem('6');
+        localStorage.clear();
+
+        localStorage.setItem('','70.41');
+        var precio2=localStorage.getItem('');
+
+        localStorage.removeItem('70.41');
+        localStorage.clear();
+
+        let texto2=document.getElementById('tabla2');
+        texto2.innerHTML="Marca: "+marca2+"</br>"+"stock: "+stock2+"</br>"+"precio: $"+precio2;
+        texto2.style.inlineSize="200px"
+        texto2.style.border="2px solid red"
+        texto2.style.marginTop="0px"
+    </script>
+</body>
+</html>
